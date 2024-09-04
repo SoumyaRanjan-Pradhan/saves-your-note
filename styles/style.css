@@ -12,3 +12,44 @@ nav img {
 h1 {
     text-align: center;
 }
+
+/* Content Section */
+div.social {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.note {
+    width: 30%;
+    height: 300px;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+div.posts {
+    width: 65%;
+    display: flex;
+    background-color: aliceblue;
+    padding: 10px
+}
+
+div.content {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 80%;
+}
+
+span.delete,
+span.edit {
+    cursor: pointer
+}
+
+span.delete:hover {
+    color: red
+}
+
+span.edit:hover {
+    color: blue
+}

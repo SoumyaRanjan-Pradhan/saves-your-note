@@ -20,5 +20,33 @@
         </form>
     </div>
 </nav>   
+<!-- Content Section -->
+<div class="social">
+    <div class="note my-2">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Enter title">
+        </div>
+        <div class="mb-3">
+            <label for="descr" class="form-label">Description</label>
+            <textarea class="form-control" id="descr" rows="3" placeholder="Type description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm" id="add" onclick="myFun()">submit</button>
+        <button type="submit" class="btn btn-primary btn-sm" id="uptodate">update</button>
+    </div>
+    <div class="posts table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 </body>
 </html>
