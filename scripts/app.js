@@ -50,3 +50,31 @@ function Update() {
         document.querySelector("tbody").innerHTML = "<tr><th scope='row'></th><td></td><td><b>Record has no data</b></td><td></td><td></td></tr>";
     }
 }
+
+//edit and update the values in the array
+function edited(index) {
+    console.log("edited " + index);
+    title.value = data[index].tit;
+    descr.value = data[index].des;
+    document.getElementById("title").focus();
+    document.getElementById("add").style = "display:none";
+    document.getElementById("uptodate").style = "display:block";
+    document.getElementById("uptodate").addEventListener("click", () => {
+        console.log(title.value);
+        console.log(descr.value);
+        if (index != null) {
+            console.log("index" + index);
+            console.log(title.value);
+            document.getElementById("add").style = "display:block";
+            console.log("updated" + index);
+            data[index].tit = title.value;
+            data[index].des = descr.value;
+            index = null;
+            Update();
+            Clear();
+        }
+        else { console.log("else:" + index) }
+        console.log(data);
+        document.getElementById("uptodate").style = "display:none";
+    });
+}
