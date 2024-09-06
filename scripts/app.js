@@ -84,3 +84,41 @@ function deleted(index) {
     data.splice(index, 1);
     Update();
 }
+
+// Searching titles from array
+let search_field = document.getElementById("search");
+search_field.addEventListener("keyup", () => {
+    let search_value = search_field.value.toLowerCase();
+
+    document.querySelector("tbody").innerHTML = "";
+    if (search_value.length >= 1) {
+        data.forEach((element, index) => {
+            let letter = element.tit.toLowerCase();
+            if (letter.length >= search_value.length) {
+                let alz = "";
+                for (let i = 0; i < search_value.length; i++) {
+                    alz += letter.charAt(i);
+                    if (alz == search_value) {
+                        document.querySelector("tbody").innerHTML += `<tr>
+             <th scope="row">${index + 1}</th>
+             <td>${data[index].tit}</td>
+             <td>${data[index].des}</td>
+             <td>
+             <span class="material-symbols-outlined edit" onclick ="edited(${index})">edit</span>
+             </td>
+             <td>
+             <span class="material-symbols-outlined delete" onclick ="deleted(${index})">
+                 delete
+                 </span>
+             </td>
+           </tr>`;
+                    }
+                }
+            }
+        });
+    }
+    else {
+        Update();
+    }
+
+})
