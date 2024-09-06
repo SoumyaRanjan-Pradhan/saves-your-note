@@ -78,3 +78,9 @@ function edited(index) {
         document.getElementById("uptodate").style = "display:none";
     });
 }
+
+//delete the values in the array
+function deleted(index) {
+    data.splice(index, 1);
+    Update();
+}
