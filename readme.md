@@ -8,3 +8,4 @@ A simple and efficient web application for creating, editing, and managing perso
 
 - **Add and View Notes**: Enter a title and description, click "Submit," and your note is saved in the system. It appears immediately in the view area with options to edit or delete.
 - **Edit and Update Notes**: Users can easily edit their existing notes by clicking the "Edit" button located before the "Delete" button in the notes view area. The note’s title and description will appear in the form for editing. After making changes, clicking the "Update" button will save the updated note and display it in the notes view area.
+- **Delete Notes**:When the user wants to delete a particular note, they can do so by clicking the delete button next to the edit button in the notes view area. Once deleted, the note is removed from the stored array, and the view area updates to display the remaining notes.
