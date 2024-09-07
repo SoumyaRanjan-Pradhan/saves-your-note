@@ -1,0 +1,45 @@
+/* Mobile &Tablet Responsive */
+@media (max-width:768px) {
+    div.social {
+        flex-direction: column;
+    }
+
+    .note,
+    div.posts {
+        width: 100%;
+    }
+}
+
+@media (max-width:568px) {
+    h1 {
+        width: 75%;
+        text-align: left;
+    }
+
+    .navbar-brand {
+        width: 20%;
+    }
+
+    .d-flex {
+        display: flex !important;
+        width: 80%;
+        margin: .5rem auto 0;
+    }
+}
+
+@media (max-width:368px) {
+    .d-flex {
+        width: 100%;
+    }
+}
+
+@media (max-width:344px) {
+    h1 {
+        width: auto;
+        text-align: left;
+    }
+
+    .navbar-brand {
+        width: auto;
+    }
+}
