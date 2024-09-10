@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +11,48 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
+
 <body>
-  <!-- Navigation bar -->
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand"><img src="./favicon.png" alt="brand logo"></a>
-        <h1 class="text-danger my-3">Write Your Notes</h1>
-        <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search title only" aria-label="Search"
-                id="search" autocomplete="off" />
-        </form>
-    </div>
-</nav>   
-<!-- Content Section -->
-<div class="social">
-    <div class="note my-2">
-        <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" placeholder="Enter title">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="./favicon.png" alt="brand logo"></a>
+            <h1 class="text-danger my-3">Write Your Notes</h1>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search title only" aria-label="Search"
+                    id="search" autocomplete="off" />
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="descr" class="form-label">Description</label>
-            <textarea class="form-control" id="descr" rows="3" placeholder="Type description"></textarea>
+    </nav>
+    <!-- Content Section -->
+    <div class="social">
+        <div class="note my-2">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter title">
+            </div>
+            <div class="mb-3">
+                <label for="descr" class="form-label">Description</label>
+                <textarea class="form-control" id="descr" rows="3" placeholder="Type description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm" id="add" onclick="myFun()">submit</button>
+            <button type="submit" class="btn btn-primary btn-sm" id="uptodate">update</button>
         </div>
-        <button type="submit" class="btn btn-primary btn-sm" id="add" onclick="myFun()">submit</button>
-        <button type="submit" class="btn btn-primary btn-sm" id="uptodate">update</button>
-    </div>
-    <div class="posts table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
-    <script src="./scripts/app.js"></script>
+        <div class="posts table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <script src="./scripts/app.js"></script>
 </body>
+
 </html>
